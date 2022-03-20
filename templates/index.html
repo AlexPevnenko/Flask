@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Flask проект</h1>
+      <p class="fs-5 text-muted">Мой первый пробный проект с помощью фреймворка flask</p><br>
+      <p class="fs-5 text-muted" align="left"> Данный проект был создан с целью ознакомиться с принципами работы фреймворка Flask для ЯП python.</p>
+      <img src="{{ url_for('static', filename='python_flask.png') }}" alt="ops image">
+  </div>
+</div>
+
+
+{% endblock %}
